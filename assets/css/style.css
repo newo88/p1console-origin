@@ -12,23 +12,34 @@ body{
 
 #navbar{
     background-color: aqua;
+    margin:20px;
 }
 
 #links{
     background-color: aquamarine;
+    float: right;
 }
 
 #main{
     background-color: red;
+    text-align: center;
+    margin: 20px;
 }
 
 #launch{
     background-color: royalblue;
+    display:inline-flex;
+    padding: 30px 30px;
+    margin: auto;
 }
 
 #logo{
     background-color: saddlebrown;
+    display:inline-flex;
+    padding: 30px 30px;
+    margin: auto;
 }
+
 
 ul{
     text-decoration: none;
