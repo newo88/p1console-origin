@@ -3,3 +3,17 @@
     margin: 0;
 }
 
+body{
+    display: grid;
+   grid-auto-flow: row;
+  
+}
+
+ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+li{
+    display: inline;
+}
