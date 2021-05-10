@@ -4,9 +4,30 @@
 }
 
 body{
+    background-color: antiquewhite;
     display: grid;
    grid-auto-flow: row;
   
+}
+
+#navbar{
+    background-color: aqua;
+}
+
+#links{
+    background-color: aquamarine;
+}
+
+#main{
+    background-color: red;
+}
+
+#launch{
+    background-color: royalblue;
+}
+
+#logo{
+    background-color: saddlebrown;
 }
 
 ul{
