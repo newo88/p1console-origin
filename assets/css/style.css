@@ -4,26 +4,36 @@
 }
 
 body{
-    background-color: antiquewhite;
-    display: grid;
-   grid-auto-flow: row;
-  
+  display: grid;
+    
 }
+
+
 
 #navbar{
     background-color: aqua;
     margin:20px;
+   
 }
 
 #links{
     background-color: aquamarine;
     float: right;
+    letter-spacing: 3px;
+    font-size: large;
+ 
+   
 }
 
 #main{
     background-color: red;
     text-align: center;
     margin: 20px;
+    border: 2px solid black;
+}
+
+#main, h2{
+    font-size: 40px;
 }
 
 #launch{
@@ -48,4 +58,36 @@ ul{
 
 li{
     display: inline;
+}
+
+a{
+    text-decoration: none;
+}
+
+.you-nintendo{
+    margin: 20px;
+}
+
+.you-play{
+    margin: 20px;
+}
+
+.you-micro{
+    margin: 20px;
+}
+
+.logo-one{
+    margin: 20px;
+    padding-right: 40px;
+}
+
+.logo-two{
+    margin: 20px;
+    
+}
+
+.logo-three{
+    margin: 20px;
+    padding-left: 20px;
+    
 }
