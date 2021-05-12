@@ -5,7 +5,9 @@
 
 body{
   display: grid;
-    
+  color: white;
+  background-color: black;
+
 }
 
 
@@ -13,6 +15,14 @@ body{
 #navbar{
     background-color: aqua;
     margin:20px;
+}
+
+#hero-image{
+    height: 400px;
+    width: 100%;
+    background-image: url('../images/hero-image-p1.jpg');
+    background-position: center;
+ 
    
 }
 
@@ -20,9 +30,7 @@ body{
     background-color: aquamarine;
     float: right;
     letter-spacing: 3px;
-    font-size: large;
- 
-   
+    font-size: 30px;
 }
 
 #main{
@@ -70,6 +78,7 @@ a{
 
 .you-play{
     margin: 20px;
+   
 }
 
 .you-micro{
@@ -78,16 +87,23 @@ a{
 
 .logo-one{
     margin: 20px;
-    padding-right: 40px;
+    height: 200px;
+    width:240px;
+    border: 3px solid black;
 }
 
 .logo-two{
     margin: 20px;
+    height: 200px;
+    width:240px;
+    border: 3px solid black;
     
 }
 
 .logo-three{
     margin: 20px;
-    padding-left: 20px;
+    height: 200px;
+    width:240px;
+    border: 3px solid black;
     
 }
