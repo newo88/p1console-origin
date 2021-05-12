@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
 }
-
+/*landing-page*/
 body{
   display: grid;
   color: white;
@@ -34,26 +34,27 @@ body{
 }
 
 #main{
-    background-color: red;
     text-align: center;
     margin: 20px;
     border: 2px solid black;
 }
 
-#main, h2{
-    font-size: 40px;
+#start{
+    font-size: 50px;
+}
+
+#start-info{
+    font-size: 25px;
 }
 
 #launch{
-    background-color: royalblue;
     display:inline-flex;
     padding: 30px 30px;
     margin: auto;
 }
 
 #logo{
-    background-color: saddlebrown;
-    display:inline-flex;
+   display:inline-flex;
     padding: 30px ;
     margin: auto;
 }
@@ -74,15 +75,20 @@ a{
 
 .you-nintendo{
     margin: 20px;
+    width: 300px;
+    height: 300px;
 }
 
 .you-play{
     margin: 20px;
-   
+    width: 300px;
+    height: 300px;
 }
 
 .you-micro{
     margin: 20px;
+    width: 300px;
+    height: 300px;
 }
 
 .logo-one{
@@ -106,4 +112,42 @@ a{
     width:240px;
     border: 3px solid black;
     
+}
+
+
+/* playstation*/
+
+.station-one{
+    display: inline-flex;
+    background-color:red;
+    margin: 20px;
+    }
+
+   
+
+
+#play-one-info{
+    height:200px;
+   float: left;
+   width: 50%;
+   font-size: 30px;
+}
+
+
+
+#play-image{
+    height: 200px;
+    width: 50%;
+    background-image: url('../images/ps1console.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#play-controller1{
+    height: 200px;
+    width: 50%;
+    background-image: url('../images/ps1controller.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
 }
