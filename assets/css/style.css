@@ -19,29 +19,55 @@ body{
     line-height: normal;
 }
 
+<<<<<<< HEAD
 
 #logo{
     font-size: 30px;
 
 }
 
+=======
+>>>>>>> 9d4adad1126bd331617a3fe54a5beeb5b86c2cb8
 #hero-image{
     height: 400px;
     width: 100%;
     background-image: url('../images/hero-image-p1.jpg');
-    background-position: center;
- 
-   
+    background-position: center;   
 }
 
+
+
+#logo{
+    margin:20px;
+    float: left;
+    font-size: 150%;
+    color:khaki;
+    }
+
+ 
 #links{
+<<<<<<< HEAD
     float: right;
     letter-spacing: 3px;
     font-size: 30px;
     color:wheat;
     margin-right: 100px;
     
+=======
+
+    float: right;
+    letter-spacing: 3px;
+    font-size: 25px;
+    padding-top: 15px;
+    color:khaki;
+    margin-right: 30px;
 }
+
+#navbar, #links{
+    line-height: 75px;
+>>>>>>> 9d4adad1126bd331617a3fe54a5beeb5b86c2cb8
+}
+
 
 #main{
     text-align: center;
@@ -63,7 +89,11 @@ body{
     margin: auto;
 }
 
+<<<<<<< HEAD
 #system-logo{
+=======
+#console-logo{
+>>>>>>> 9d4adad1126bd331617a3fe54a5beeb5b86c2cb8
    display:inline-flex;
     padding: 30px 30px;
     margin: auto;
@@ -82,6 +112,10 @@ li{
 a{
     text-decoration: none;
     color: yellow;
+}
+
+a:-webkit-any-link{
+    color: khaki;
 }
 
 .you-nintendo{
@@ -128,6 +162,7 @@ a{
 
 /* playstation*/
 
+<<<<<<< HEAD
 .system-info{
     display: inline-flex;
     margin: 20px;
@@ -155,3 +190,31 @@ a{
     border: white 4px solid;
     margin:auto;
  }
+=======
+.playstation-content{
+    display: inline-flex;
+    background-color: red;
+    margin: 40px 40px;
+    height: 300px;
+    width: 90%;
+    }
+
+   
+    #playstation-info{
+    width: 50%;
+    float: left;
+    font-size: 30px;
+    border: solid 4px black;
+
+}
+
+
+#play-image{
+    width: 50%;
+    background-image: url('../images/ps1console.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  
+}
+
+>>>>>>> 9d4adad1126bd331617a3fe54a5beeb5b86c2cb8
