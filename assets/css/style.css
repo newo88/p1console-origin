@@ -172,7 +172,7 @@ a{
 
 .play-one-info{
     height:300px;
-    width: 70%;
+    width: 60%;
     font-size: 20px;
     border: white 4px solid;
     margin:auto;
@@ -210,32 +210,54 @@ a{
     background-color: aliceblue;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1100px){
     .system-info{
         display: block;
-        margin: 0 auto;
+        margin: 10px auto;
+        width:80%;
     }
 
     .play-image, iframe{
-        width:200px;
+        width:300px;
         height:200px;
         text-align: center;
-        margin: 0 auto;
+        margin: 0px auto;
     }
 
     .play-one-info, p{
         text-align: center;
-        margin: 0 auto;
+        margin: 10px auto;
 
 
     }
 
     .imageplay{
         text-align: center;
-        margin: 0 auto;
+        margin: 10px auto;
     }
 
     .system-name{
         text-align: center;
+        width: 80%;
     }
+
+    .sub-menu{
+        display: none;
+    }
+
+    #launch{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+   #system-logo{
+       display:block;
+       margin: 0 auto;
+       text-align: center;
+   }
+
+   #hero-image {
+       display: none;
+   }
 }
