@@ -8,7 +8,7 @@
 body{
   display: grid;
   color: white;
-  background-image: url("../images/background.jpg");
+ background-color: blue;
   background-position: relative;
   background-size: contain;
  }
@@ -154,10 +154,11 @@ a{
 }
 
 .imageplay{
- width:75%;
+ width:350px;
  height: 300px;
  border-radius: 20px;
  transition: 1s;
+ text-align: center;
 }
 
 .play-one-info{
@@ -173,3 +174,34 @@ a{
      z-index: 2;
 
  }
+
+
+.company-name{
+    font-size: 40px;
+    text-align: center;
+}
+
+.system-name{
+    text-align: left;
+    font-size: 50px;
+    color: red;
+    margin: 0 0 0 50px;
+}
+
+.sub-menu{
+    width: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sub-menu a{
+    color:black;
+}
+
+@media screen and (max-width: 1000px){
+    .system-info{
+        display: block;
+        margin: 0 auto;
+    }
+}
