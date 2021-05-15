@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -11,6 +13,7 @@ body{
  background-color: blue;
   background-position: relative;
   background-size: contain;
+  font-family: Roboto, ariel;
  }
 
 
@@ -48,6 +51,7 @@ body{
     font-size: 30px;
     color:wheat;
     margin: 40px 20px ;
+   
     
     
 }
@@ -57,6 +61,9 @@ body{
     text-align: center;
     margin: 20px;
     border: 2px solid black;
+    font-family:  Roboto Condensed, ariel;
+
+
 }
 
 #start{
@@ -154,19 +161,22 @@ a{
 }
 
 .imageplay{
- width:350px;
- height: 300px;
+ width:300px;
+ height: 200px;
  border-radius: 20px;
  transition: 1s;
  text-align: center;
+ 
+
 }
 
 .play-one-info{
     height:300px;
     width: 70%;
-    font-size: 30px;
+    font-size: 20px;
     border: white 4px solid;
     margin:auto;
+    font-family:  Roboto Condensed, ariel;
  }
 
  .imageplay:hover{
@@ -197,11 +207,35 @@ a{
 
 .sub-menu a{
     color:black;
+    background-color: aliceblue;
 }
 
 @media screen and (max-width: 1000px){
     .system-info{
         display: block;
         margin: 0 auto;
+    }
+
+    .play-image, iframe{
+        width:200px;
+        height:200px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .play-one-info, p{
+        text-align: center;
+        margin: 0 auto;
+
+
+    }
+
+    .imageplay{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .system-name{
+        text-align: center;
     }
 }
