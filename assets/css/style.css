@@ -94,9 +94,6 @@ a{
     color: yellow;
 }
 
-a:-webkit-any-link{
-    color: khaki;
-}
 
 .you-nintendo{
     margin: 20px;
@@ -160,6 +157,7 @@ a:-webkit-any-link{
  width:75%;
  height: 300px;
  border-radius: 20px;
+ transition: 1s;
 }
 
 .play-one-info{
@@ -168,4 +166,10 @@ a:-webkit-any-link{
     font-size: 30px;
     border: white 4px solid;
     margin:auto;
+ }
+
+ .imageplay:hover{
+     transform: scale(1.3);
+     z-index: 2;
+
  }
