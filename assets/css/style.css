@@ -10,7 +10,7 @@
 body{
   display: grid;
   color: white;
- background-color: blue;
+ background-image: url('../images/background.jpg');
   background-position: relative;
   background-size: contain;
   font-family: Roboto, ariel;
@@ -156,7 +156,6 @@ a{
 .play-image{
     height: 300px;
     width: 50%;
-    border: violet solid 3px;
     margin: 50px 50px;
 }
 
