@@ -35,7 +35,7 @@ body{
 
 
 #logo{
-    margin-top:10px;
+    margin:10px 0 0 20px ;
     float: left;
     font-size: 150%;
     color:khaki;
@@ -50,27 +50,33 @@ body{
     color:wheat;
     margin: 20px 20px;
     padding-bottom: 10px;
+}
+
+#links a:hover{
+    background-color: #fff;
    
-    
-    
 }
 
 
 #main{
     text-align: center;
     margin: 20px;
-    border: 2px solid black;
-   
-
-
+  
 }
+
 
 #start{
     font-size: 50px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 #start-info{
-    font-size: 25px;
+    font-size: 30px;
+    text-align: center;
+    
+
+
 }
 
 #launch{
@@ -175,11 +181,12 @@ a{
 }
 
 .play-one-info{
-    height:250px;
     width: 60%;
-    font-size: 20px;
-    border: white 4px solid;
+    font-size: 25px;
+   border: white 4px solid;
     margin: auto;
+    text-align: center;
+
     
  }
 
@@ -223,7 +230,7 @@ a{
     .system-info{
         display: block;
         margin: 0 auto;
-        width:80%;
+        width:95%;
     }
 
     .play-image, iframe{
@@ -240,11 +247,16 @@ a{
     }
 
     .play-one-info, p{
+
         text-align: center;
         margin: 10px auto;
        
     }
 
+    .system-name{
+        text-align: center;
+        margin: 0 auto;
+    }
 
 
     .imageplay{
@@ -284,8 +296,13 @@ a{
 }
 
 #links{
-    display: block;
+    text-decoration: underline;
+    float: left;
+    display: grid;
+    grid-row: 3;
+    
 }
+
 
 
 }
