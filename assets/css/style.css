@@ -1,307 +1,312 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
+
 /*landing-page*/
 
 
-body{
-  display: grid;
-  color: white;
- background-image: url('../images/background.jpg');
-  background-size: contain;
- }
+body {
+    display: grid;
+    color: white;
+    background-image: url('../images/background.jpg');
+    background-size: contain;
+}
 
 
-#navbar{
+#navbar {
     margin: 20px;
     line-height: normal;
     background-color: rgb(180, 44, 44);
 }
 
 
-#logo{
+#logo {
     font-size: 30px;
 
 }
 
-#hero-image{
+#hero-image {
     height: 400px;
     width: 100%;
     background-image: url('../images/hero-image-p1.jpg');
-    background-position: center;   
+    background-position: center;
 }
 
 
 
-#logo{
-    margin:10px 0 0 20px ;
+#logo {
+    margin: 10px 0 0 20px;
     float: left;
     font-size: 150%;
-    color:khaki;
-    
-    }
+    color: khaki;
 
- 
-#links{
+}
+
+
+#links {
     float: right;
     letter-spacing: 3px;
     font-size: 30px;
-    color:wheat;
+    color: wheat;
     margin: 20px 20px;
     padding-bottom: 10px;
 }
 
-#links a:hover{
+#links a:hover {
     background-color: #fff;
-   
+
 }
 
 
-#main{
+#main {
     text-align: center;
     margin: 20px;
-  
+
 }
 
 
-#start{
+#start {
     font-size: 50px;
     text-align: center;
     margin: 0 auto;
 }
 
-#start-info{
+#start-info {
     font-size: 30px;
     text-align: center;
-    
+
 
 
 }
 
-#launch{
-    display:inline-flex;
+#launch {
+    display: inline-flex;
     padding: 30px 30px;
     margin: auto;
 }
 
-#system-logo{
-   display:inline-flex;
+#system-logo {
+    display: inline-flex;
     padding: 30px 30px;
     margin: auto;
 }
 
 
-ul{
+ul {
     text-decoration: none;
     list-style-type: none;
 }
 
-li{
+li {
     display: inline;
 }
 
-a{
+a {
     text-decoration: none;
     color: rgba(214, 205, 202, 0.733);
 }
 
-
-.you-nintendo{
+/*===============Home screen videos=================*/
+.you-nintendo {
     margin: 20px;
     width: 300px;
     height: 300px;
 }
 
-.you-play{
+.you-play {
     margin: 20px;
     width: 300px;
     height: 300px;
 }
 
-.you-micro{
+.you-micro {
     margin: 20px;
     width: 300px;
     height: 300px;
 }
 
-.logo-one{
+/*============== Home screen Logos================*/
+.logo-one {
     margin: 20px;
     height: 200px;
-    width:240px;
+    width: 240px;
     border: 3px solid black;
 }
 
-.logo-two{
+.logo-two {
     margin: 20px;
     height: 200px;
-    width:240px;
+    width: 240px;
     border: 3px solid black;
-    
+
 }
 
-.logo-three{
+.logo-three {
     margin: 20px;
     height: 200px;
-    width:240px;
+    width: 240px;
     border: 3px solid black;
-    
+
 }
 
 
-/* playstation*/
+/*===========Paystation Nintendo Microsoft Pages*/
 
-.system-info{
+.system-info {
     display: inline-flex;
     margin: 20px;
     text-align: center;
-    }
+}
 
-.companylogo{
+.companylogo {
     text-align: center;
 }
 
 
-.play-image{
+.play-image {
     height: 200px;
     width: 50%;
     margin: 50px 50px;
-    
-}
-
-.imageplay{
- width:250px;
- height: 200px;
- border-radius: 20px;
- transition: 1s;
- text-align: center;
-
- 
 
 }
 
-.play-one-info{
-    width: 60%;
-    font-size: 25px;
-   border: white 4px solid;
-    margin: auto;
+.imageplay {
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    transition: 1s;
     text-align: center;
 
-    
- }
-
- .imageplay:hover{
-     transform: scale(1.3);
-     z-index: 2;
-
- }
 
 
-.company-name{
+}
+
+.play-one-info {
+    width: 60%;
+    font-size: 25px;
+    border: white 4px solid;
+    margin: auto;
+    text-align: center;
+    padding: 10px 10px;
+
+
+}
+
+.imageplay:hover {
+    transform: scale(1.3);
+    z-index: 2;
+
+}
+
+
+.company-name {
     font-size: 40px;
     text-align: center;
 }
 
-.system-name{
+.system-name {
     height: 75px;
     width: 280px;
     text-align: left;
     font-size: 50px;
     color: red;
     margin: 20px 0 0 50px;
-   
+
 }
 
-.sub-menu{
+.sub-menu {
     width: 50%;
     position: fixed;
     top: 0;
     left: 0;
 }
 
-.sub-menu a{
-    color:black;
+.sub-menu a {
+    color: black;
     background-color: aliceblue;
 }
 
 
 /*Media Querys*/
-@media screen and (max-width: 1100px){
-    .system-info{
+@media screen and (max-width: 1000px) {
+    .system-info {
         display: block;
         margin: 0 auto;
-        width:95%;
+        width: 95%;
     }
 
-    .play-image, iframe{
-        width:300px;
-        height:200px;
+    .play-image,
+    iframe {
+        width: 300px;
+        height: 200px;
         text-align: center;
         margin: 10px auto;
-        
+
     }
 
-    .play-image{
+    .play-image {
         margin-top: 50px;
         margin-bottom: 50px;
     }
 
-    .play-one-info, p{
+    .play-one-info,
+    p {
 
         text-align: center;
         margin: 10px auto;
-       
+
     }
 
-    .system-name{
+    .system-name {
         text-align: center;
         margin: 0 auto;
     }
 
 
-    .imageplay{
+    .imageplay {
         text-align: center;
         margin: 10px auto;
     }
 
-    .system-name{
+    .system-name {
         text-align: center;
         width: 80%;
     }
 
-    .sub-menu{
+    .sub-menu {
         display: none;
     }
 
-    #launch{
+    #launch {
         display: block;
         margin: 0 auto;
         text-align: center;
     }
 
-   #system-logo{
-       display:block;
-       margin: 0 auto;
-       text-align: center;
-   }
+    #system-logo {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
 
-   #hero-image {
-       display: none;
-   }
+    #hero-image {
+        display: none;
+    }
 
-   .imageplay:hover{
-    transform: scale(1);
-    z-index: 1;
+    .imageplay:hover {
+        transform: scale(1);
+        z-index: 1;
 
-}
+    }
 
-#links{
-    text-decoration: underline;
-    float: left;
-    display: grid;
-    grid-row: 3;
-    
-}
+    #links {
+        text-decoration: underline;
+        float: left;
+        display: grid;
+        grid-row: 3;
+
+    }
 
 
 
