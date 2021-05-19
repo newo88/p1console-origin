@@ -98,9 +98,9 @@ ul {
     list-style-type: none;
 }
 
-li {
+/*li {
     display: inline;
-}
+}*/
 
 a {
     text-decoration: none;
@@ -155,7 +155,6 @@ a {
 
 .system-info {
     display: inline-flex;
-    margin: 20px;
     text-align: center;
 }
 
@@ -163,42 +162,43 @@ a {
     text-align: center;
 }
 
+.listitems, ul{
+    display: inline;
+    text-align: left;
+    margin-right: 20px;
+}
+
 
 .play-image {
-    height: 200px;
+    height: 250px;
     width: 50%;
     margin: 50px 50px;
+
 
 }
 
 .imageplay {
-    width: 250px;
-    height: 200px;
-    border-radius: 20px;
-    transition: 1s;
-    text-align: center;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  background-size: inherit;
 
 
 
 }
 
 .play-one-info {
-    width: 95%;
+    width: 60%;
+    height: 400px;
     font-size: 25px;
     border: white 4px solid;
     margin: auto;
-    text-align: center;
+    display: inline-block;
     padding: 10px 10px;
 
-
 }
 
 
-.imageplay:hover {
-    transform: scale(1.3);
-    z-index: 2;
-
-}
 
 
 .company-name {
@@ -227,6 +227,7 @@ a {
     color: black;
     background-color: rgb(14, 68, 116);
 }
+
 
 
 
