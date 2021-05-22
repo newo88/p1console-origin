@@ -344,60 +344,128 @@ table{
 
 
 
-#play1 {
-    grid-area: play1;
+#play-one {
+    grid-area: play-one;
     border:rgb(14, 68, 116) 2px solid;
     justify-content: center;
 }
 
-#play2 {
-    grid-area: play2;
+#play-two {
+    grid-area: play-two;
     border:rgb(14, 68, 116) 2px solid;
     font-size: 30px;
     justify-content: center;
 
 }
 
-#play3 {
-    grid-area: play3;
+#play-three {
+    grid-area: play-three;
     border:rgb(14, 68, 116) 2px solid;
     justify-content: center;
 
 }
 
-#play4 {
-    grid-area: play4;
+#play-four{
+    grid-area: play-four;
     border:rgb(14, 68, 116) 2px solid;
     justify-content: center;
 
     }
 
-#play5 {
+#play-five {
     border:rgb(14, 68, 116) 2px solid;
-    grid-area: play5;
-   
-    justify-content: center;
+    grid-area: play-five;
 }
 
-#play6 {
-    grid-area: play6;
-    border:rgb(14, 68, 116) 2px solid;
-    font-size: 30px;
-    justify-content: center;
-
-    
-    
+#play-six{
+    grid-area: play-six;
+    border:rgb(14, 68, 116) 2px solid; 
 }
 
-#play7 {
-    grid-area: play7;
+#play-seven {
+    grid-area: play-seven;
     border:rgb(14, 68, 116) 2px solid;
 }
 
-#play8 {
-    grid-area: play8;
+#play-eight {
+    grid-area: play-eight;
     border:rgb(14, 68, 116) 2px solid;
 }
+
+
+#play-nine{
+    grid-area: play-nine;
+}
+
+#play-ten{
+    grid-area: play-ten;
+}
+
+#play-eleven{
+    grid-area: play-eleven;
+}
+
+#play-twelve{
+    grid-area: play-twelve;
+}
+
+#play-thirteen{
+    grid-area: play-thirteen;
+}
+
+#play-fourteen{
+    grid-area: play-fourteen;
+}
+
+#play-fifteen{
+    grid-area: play-fifteen;
+}
+
+#play-sixteen{
+    grid-area: play-sixteen;
+}
+
+#play-seventeen{
+    grid-area: play-seventeen;
+}
+
+#play-eighteen{
+    grid-area: play-eighteen;
+}
+
+#play-nineteen{
+    grid-area: play-nineteen;
+}
+
+#play-twenty{
+    grid-area: play-twenty;
+}
+
+#playone{
+    grid-area: playone;
+}
+
+#playtwo{
+    grid-area: playtwo;
+}
+
+#playthree{
+    grid-area: playthree;
+}
+
+#playfour{
+    grid-area: playfour;
+}
+
+#playfive{
+    grid-area: playfive;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+
 
 .video1{
     background-size: inherit;
@@ -411,15 +479,36 @@ table{
     width: 100%;
     grid-template-areas:
         " . navbar "
-        " . play11"
-        " . play1 "
-        " . play2 "
-        " . play3 "
-        " . play4 "
-        " . play5 "
-        " . play6 "
-        " . play7 "
-        " . play8 "
+        " . sub-menu"
+        " . playone"
+        " . play-one "
+        " . play-two "
+        " . play-three "
+        " . play-four "
+        " . playtwo "
+        " . play-five "
+        " . play-six "
+        " . play-seven "
+        " . play-eight"
+        " . playthree "
+        " . play-nine "
+        " . play-ten "
+        " . play-eleven "
+        " . play-twelve "
+        " . playfour "
+        " . play-thirteen "
+        " . play-fourteen "
+        " . play-fifteen "
+        " . play-sixteen "
+        " . playfive "
+        " . play-seventeen "
+        " . play-eighteen "
+        " . play-nineteen "
+        " . play-twenty "
+        " . footer "
+
+
+
 ;
      
 }
@@ -462,19 +551,31 @@ iframe, #video1{
 
 }
 
-#play11{
-    grid-area: play11;
-}
+
 
 @media (min-width: 1100px){
     .play-container{
         grid-template-columns: 1fr repeat(2, minmax(40vw, auto)) 1fr;
         grid-template-areas:"navbar navbar navbar "
-                             " . play11 play11 "
-                             " . play3 play2 "
-                             " . play1 play4 "
-                             " . play5 play6 "
-                             " . play7 play8 ";
+                            " sub-menu sub-menu sub-meun"
+                             " . playone playone "
+                             " . play-one play-two "
+                             " . play-three play-four "
+                             " . playtwo playtwo "
+                             " . play-five play-six "
+                             " . play-seven play-eight "
+                             " . playthree playthree "
+                             " . play-nine play-ten "
+                             " . play-eleven play-twelve "
+                             " . playfour playfour "
+                             " . play-thirteen play-fourteen "
+                             " . play-fifteen play-sixteen "
+                             " . playfive playfive "
+                             " . play-seventeen play-eighteen "
+                             " . play-nineteen play-twenty "
+                             "  footer footer footer"
+                             
+                             ;
 
     
                              
@@ -536,6 +637,7 @@ iframe, #video1{
     " . xfourteen"
     " . xfifteen"
     " . xsixteen"
+    " . footer"
     ;
 }
 
@@ -546,6 +648,10 @@ h2{
 
 #navbar{
     grid-area: navbar;
+}
+
+#footer{
+    grid-area: footer;
 }
 
 .sub-menu{
@@ -662,7 +768,8 @@ h2{
              " . xeleven xtwelve"
              " . xboxfour xboxfour"
              " . xthirteen xfourteen"
-             " . xfifteen xsixteen";
+             " . xfifteen xsixteen"
+             "footer footer footer";
 
     }
 
@@ -681,3 +788,5 @@ h2{
     }
 
     }
+
+    
