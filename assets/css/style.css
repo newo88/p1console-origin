@@ -3,14 +3,13 @@
     margin: 0;
 }
 
-/*landing-page*/
+/*landing-page
 
 
 body {
     display: grid;
-    color: white;
-    background-image: url('../images/background.jpg');
-    background-size: contain;
+    background-color: lightslategrey;
+    box-sizing: border-box;
 }
 
 
@@ -98,16 +97,16 @@ ul {
     list-style-type: none;
 }
 
-/*li {
+li {
     display: inline;
-}*/
+}
 
 a {
     text-decoration: none;
     color: rgba(214, 205, 202, 0.733);
 }
-
-/*===============Home screen videos=================*/
+*/
+/*===============Home screen videos=================
 .you-nintendo {
     margin: 20px;
     width: 300px;
@@ -125,8 +124,8 @@ a {
     width: 300px;
     height: 300px;
 }
-
-/*============== Home screen Logos================*/
+*/
+/*============== Home screen Logos================
 .logo-one {
     margin: 20px;
     height: 200px;
@@ -149,12 +148,12 @@ a {
     border: 3px solid black;
 
 }
+*/
 
-
-/*===========Paystation Nintendo Microsoft Pages*/
+/*===========Paystation Nintendo Microsoft Pages
 
 .system-info {
-    display: inline-flex;
+    display: flex;
     text-align: center;
 }
 
@@ -162,43 +161,44 @@ a {
     text-align: center;
 }
 
-.listitems, ul{
-    display: inline;
-    text-align: left;
-    margin-right: 20px;
-}
+
 
 
 .play-image {
     height: 250px;
-    width: 50%;
+    width: 60%;
     margin: 50px 50px;
+   justify-content: center;
+
 
 
 }
 
 .imageplay {
-  width: 100%;
-  height: 300px;
+  width: 300px;
+  height: 200px;
   text-align: center;
-  background-size: inherit;
-
+background-color: lime;
 
 
 }
 
 .play-one-info {
     width: 60%;
-    height: 400px;
     font-size: 25px;
-    border: white 4px solid;
-    margin: auto;
-    display: inline-block;
+    border: white 1px solid;
+    margin: 20px 20px;
     padding: 10px 10px;
+    justify-content: center;
+    box-shadow: 0 0 0 .23;
+    margin-right: 50px;
+
 
 }
 
-
+table{
+    justify-content: center;
+}
 
 
 .company-name {
@@ -208,7 +208,7 @@ a {
 
 .system-name {
     height: 75px;
-    width: 280px;
+    width: 100%;
     text-align: left;
     font-size: 50px;
     color: red;
@@ -229,20 +229,20 @@ a {
 }
 
 
+*/
 
 
-
-/*Media Querys*/
+/*Media Querys
 @media screen and (max-width: 1000px) {
     .system-info {
         display: block;
         margin: 0 auto;
-        width: 95%;
+        width: 100%;
     }
 
     .play-image,
     iframe {
-        width: 300px;
+        width: 100%;
         height: 200px;
         text-align: center;
         margin: 10px auto;
@@ -250,6 +250,7 @@ a {
     }
 
     .play-image {
+        width: 100%;
         margin-top: 50px;
         margin-bottom: 50px;
     }
@@ -315,3 +316,368 @@ a {
 
 
 }
+*/
+/* grid try*/
+
+.play-container {
+    display: grid;
+    grid-template-columns: 3vw 1fr 3vw;
+    grid-gap: 2px;
+    color: black;
+    background-color: darkslategray;
+    font-size: 25px;
+    border:rgb(14, 68, 116) 2px solid;
+    text-align: center;  
+    box-sizing: border-box;
+    letter-spacing: 2px;
+    justify-content: strech;
+    align-items: stretch;
+   
+}
+
+#navbar{
+    background-color: aliceblue;
+}
+ 
+
+
+
+
+
+#play1 {
+    grid-area: play1;
+    border:rgb(14, 68, 116) 2px solid;
+    justify-content: center;
+}
+
+#play2 {
+    grid-area: play2;
+    border:rgb(14, 68, 116) 2px solid;
+    font-size: 30px;
+    justify-content: center;
+
+}
+
+#play3 {
+    grid-area: play3;
+    border:rgb(14, 68, 116) 2px solid;
+    justify-content: center;
+
+}
+
+#play4 {
+    grid-area: play4;
+    border:rgb(14, 68, 116) 2px solid;
+    justify-content: center;
+
+    }
+
+#play5 {
+    border:rgb(14, 68, 116) 2px solid;
+    grid-area: play5;
+   
+    justify-content: center;
+}
+
+#play6 {
+    grid-area: play6;
+    border:rgb(14, 68, 116) 2px solid;
+    font-size: 30px;
+    justify-content: center;
+
+    
+    
+}
+
+#play7 {
+    grid-area: play7;
+    border:rgb(14, 68, 116) 2px solid;
+}
+
+#play8 {
+    grid-area: play8;
+    border:rgb(14, 68, 116) 2px solid;
+}
+
+.video1{
+    background-size: inherit;
+   align-items: stretch;
+}
+
+
+.play-container {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    grid-template-areas:
+        " . navbar "
+        " . play11"
+        " . play1 "
+        " . play2 "
+        " . play3 "
+        " . play4 "
+        " . play5 "
+        " . play6 "
+        " . play7 "
+        " . play8 "
+;
+     
+}
+iframe{
+    justify-content: strech;
+    height: 100%;
+}
+
+img{
+    justify-content: center;
+    height: auto;
+    width: auto;
+}
+
+#navbar{
+    grid-area: navbar;
+}
+
+
+
+#p1photo, img{
+    
+    justify-content: center;
+    width: 100%;
+    border-radius: 3px;
+    background-size: inherit;
+}
+
+iframe, #video1{
+    justify-content: center;
+    width: 100%;
+    border-radius: 3px;
+   
+    
+}
+
+.play-container > div{
+    margin: 20px;
+    
+
+}
+
+#play11{
+    grid-area: play11;
+}
+
+@media (min-width: 1100px){
+    .play-container{
+        grid-template-columns: 1fr repeat(2, minmax(40vw, auto)) 1fr;
+        grid-template-areas:"navbar navbar navbar "
+                             " . play11 play11 "
+                             " . play3 play2 "
+                             " . play1 play4 "
+                             " . play5 play6 "
+                             " . play7 play8 ";
+
+    
+                             
+    }
+
+    #navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+
+   
+
+    img{
+        justify-content: strech;
+        height: 100%;
+    }
+
+   
+
+
+}
+
+/*grid area microsoft*/
+.xbox-container{
+    display: grid;
+    grid-template-columns: 3vw 1fr 3vw;
+    grid-gap: 2px;
+    color: black;
+    background-color: darkslategray;
+    font-size: 25px;
+    border:rgb(14, 68, 116) 2px solid;
+    text-align: center;  
+    box-sizing: border-box;
+    letter-spacing: 2px;
+    justify-content: strech;
+    align-items: stretch;
+   grid-template-areas: 
+    " . navbar"
+    " . sub-menu"
+    " . xboxone"
+    " . xone" 
+    " . xtwo"
+    " . xthree"
+    " . xfour"
+    " . xboxtwo"
+    " . xfive"
+    " . xsix"
+    " . xseven"
+    " . xeight"
+    " . xboxthree"
+    " . xnine"
+    " . xten"
+    " . xeleven"
+    " . xtwelve"
+    " . xboxfour"
+    " . xthirteen"
+    " . xfourteen"
+    " . xfifteen"
+    " . xsixteen"
+    ;
+}
+
+h2{
+      height: 80px;
+      background-color: aliceblue;
+}
+
+#navbar{
+    grid-area: navbar;
+}
+
+.sub-menu{
+    grid-area: sub-menu;
+}
+
+#xone{
+    grid-area: xone;
+}
+
+#xtwo{
+    grid-area: xtwo;
+}
+
+
+#xthree{
+    grid-area: xthree;
+}
+
+
+#xfour{
+    grid-area: xfour;
+}
+
+
+#xfive{
+    grid-area: xfive;
+}
+
+
+#xsix{
+    grid-area: xsix;
+}
+
+#xseven{
+    grid-area: xseven;
+}
+
+
+#xeight{
+    grid-area: xeight;
+}
+
+
+#xnine{
+    grid-area: xnine;
+}
+
+#xten{
+    grid-area: xten;
+}
+
+
+#xeleven{
+    grid-area: xeleven;
+}
+
+
+#xtwelve{
+    grid-area: xtwelve;
+}
+
+#xthirteen{
+    grid-area: xthirteen;
+}
+
+#xfourteen{
+    grid-area: xfourteen;
+}
+
+#xfifteen{
+    grid-area: xfifteen;
+}
+
+#xsixteen{
+    grid-area: xsixteen;
+}
+
+
+#xboxone{
+    grid-area: xboxone;
+}
+#xboxtwo{
+    grid-area: xboxtwo;
+}
+#xboxthree{
+    grid-area: xboxthree;
+}
+#xboxfour{
+    grid-area: xboxfour;
+}
+
+#xboxfour{
+    grid-area: xboxfour;
+}
+
+
+
+/* microsoft media query*/
+@media (min-width: 1100px){
+    .xbox-container{
+        grid-template-columns: 1fr repeat(2, minmax(40vw, auto)) 1fr;
+        grid-template-areas:
+             "navbar navbar navbar"
+             " sub-menu sub-menu sub-menu"
+             " . xboxone xboxone "
+             " . xone xtwo"
+             " . xthree xfour"
+             " . xboxtwo xboxtwo"
+             " . xfive xsix"
+             " . xseven xeight"
+             " . xboxthree xboxthree"
+             " . xnine xten"
+             " . xeleven xtwelve"
+             " . xboxfour xboxfour"
+             " . xthirteen xfourteen"
+             " . xfifteen xsixteen";
+
+    }
+
+    #navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+
+   
+
+    img{
+        justify-content: strech;
+        height: 100%;
+    }
+
+    }
