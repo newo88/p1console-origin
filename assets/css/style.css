@@ -317,7 +317,211 @@ table{
 
 }
 */
-/* grid try*/
+.nintendo-container{
+grid-template-columns: 3vw 1fr 3vw;
+grid-gap: 2px;
+color: black;
+background-color: darkslategray;
+font-size: 25px;
+border:rgb(14, 68, 116) 2px solid;
+text-align: center;  
+box-sizing: border-box;
+letter-spacing: 2px;
+justify-content: strech;
+align-items: stretch;
+display: grid;
+justify-content: center;
+width: 100%;
+}
+
+.nintendo-container {
+    grid-template-areas:
+    " . navbar"
+    " . sub-menu"
+    " . nintendo1"
+    " . nin-one"
+    " . nin-two"
+    " . nin-three"
+    " . nin-four"
+    " . nintendo2"
+    " . nin-five"
+    " . nin-six"
+    " . nin-seven"
+    " . nin-eight"
+    " . nintendo3"
+    " . nin-nine"
+    " . nin-ten"
+    " . nin-eleven"
+    " . nin-twelve"
+    " . nintendo4"
+    " . nin-thirteen"
+    " . nin-fourteen"
+    " . nin-fifteen"
+    " . nin-sixteen"
+    " . nintendo5"
+    " . nin-seventeen"
+    " . nin-eighteen"
+    " . nin-nineteen"
+    " . nin-twenty"
+    " . nintendo6"
+    " . nin-twentyone"
+    " . nin-twentytwo"
+    " . nin-twentythree"
+    " . nin-twentyfour"
+    " . nintendo7"
+    " . nin-twentyfive"
+    " . nin-twentysix"
+    " . nin-twentyseven"
+    " . nin-twentyeight"
+    " . footer";
+}
+#footer{
+grid-area: footer;
+}
+
+#nintendo1{
+ grid-area: nintendo1;
+} 
+
+#nintendo1{
+    grid-area: nintendo1;
+} 
+
+#nintendo2{
+    grid-area: nintendo2;
+} 
+
+#nintendo3{
+    grid-area: nintendo3;
+} 
+#nintendo4{
+    grid-area: nintendo4;
+} 
+#nintendo5{
+    grid-area: nintendo5;
+} 
+
+#nintendo6{
+    grid-area: nintendo6;
+} 
+
+#nintendo7{
+    grid-area: nintendo7;
+} 
+
+#nin-one{
+grid-area: nin-one;
+   }
+
+#nin-two{
+    grid-area: nin-two;
+}
+
+#nin-three{
+    grid-area: nin-three;
+}
+
+#nin-four{
+    grid-area: nin-four;
+}
+
+#nin-five{
+    grid-area: nin-five;
+}
+
+#nin-six{
+    grid-area: nin-six;
+}
+
+#nin-seven{
+    grid-area: nin-seven;
+}
+
+#nin-eight{
+    grid-area: nin-eight;
+}
+
+#nin-nine{
+    grid-area: nin-nine;
+}
+
+#nin-ten{
+    grid-area: nin-ten;
+}
+
+#nin-eleven{
+    grid-area: nin-eleven;
+}
+
+#nin-twelve{
+    grid-area: nin-twelve;
+}
+
+#nin-thirteen{
+    grid-area: nin-thirteen;
+}
+
+#nin-fourteen{
+    grid-area: nin-fourteen;
+}
+
+#nin-fifteen{
+    grid-area: nin-fifteen;
+}
+
+#nin-sixteen{
+    grid-area: nin-sixteen;
+}
+
+#nin-seventeen{
+    grid-area: nin-seventeen;
+}
+
+#nin-eighteen{
+    grid-area: nin-eighteen;
+}
+
+#nin-nineteen{
+    grid-area: nin-nineteen;
+}
+
+#nin-twenty{
+    grid-area: nin-twenty;
+}
+
+#nin-twentyone{
+    grid-area: nin-twentyone;
+}
+
+#nin-twentytwo{
+    grid-area: nin-twentytwo;
+}
+
+#nin-twentythree{
+    grid-area: nin-twentythree;
+}
+
+#nin-twentyfour{
+    grid-area: nin-twentyfour;
+}
+
+#nin-twentyfive{
+    grid-area: nin-twentyfive;
+}
+
+#nin-twentysix{
+    grid-area: nin-twentysix;
+
+}
+#nin-twentyseven{
+    grid-area: nin-twentyseven;
+}
+
+#nin-twentyeight{
+    grid-area: nin-twentyeight;
+}
+
+/*Playstation grid layout*/
 
 .play-container {
     display: grid;
@@ -339,11 +543,6 @@ table{
     background-color: aliceblue;
 }
  
-
-
-
-
-
 #play-one {
     grid-area: play-one;
     border:rgb(14, 68, 116) 2px solid;
@@ -551,55 +750,6 @@ iframe, #video1{
 
 }
 
-
-
-@media (min-width: 1100px){
-    .play-container{
-        grid-template-columns: 1fr repeat(2, minmax(40vw, auto)) 1fr;
-        grid-template-areas:"navbar navbar navbar "
-                            " sub-menu sub-menu sub-meun"
-                             " . playone playone "
-                             " . play-one play-two "
-                             " . play-three play-four "
-                             " . playtwo playtwo "
-                             " . play-five play-six "
-                             " . play-seven play-eight "
-                             " . playthree playthree "
-                             " . play-nine play-ten "
-                             " . play-eleven play-twelve "
-                             " . playfour playfour "
-                             " . play-thirteen play-fourteen "
-                             " . play-fifteen play-sixteen "
-                             " . playfive playfive "
-                             " . play-seventeen play-eighteen "
-                             " . play-nineteen play-twenty "
-                             "  footer footer footer"
-                             
-                             ;
-
-    
-                             
-    }
-
-    #navbar{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 80px;
-    }
-
-   
-
-    img{
-        justify-content: strech;
-        height: 100%;
-    }
-
-   
-
-
-}
-
 /*grid area microsoft*/
 .xbox-container{
     display: grid;
@@ -750,7 +900,7 @@ h2{
 
 
 
-/* microsoft media query*/
+/* microsoft playstation media query*/
 @media (min-width: 1100px){
     .xbox-container{
         grid-template-columns: 1fr repeat(2, minmax(40vw, auto)) 1fr;
@@ -769,7 +919,65 @@ h2{
              " . xboxfour xboxfour"
              " . xthirteen xfourteen"
              " . xfifteen xsixteen"
-             "footer footer footer";
+             "footer footer footer";}
+
+
+ .play-container{
+ grid-template-columns: 1fr repeat(2, minmax(40vw, auto)) 1fr;
+grid-template-areas:"navbar navbar navbar "
+                                    " sub-menu sub-menu sub-meun"
+                                     " . playone playone "
+                                     " . play-one play-two "
+                                     " . play-three play-four "
+                                     " . playtwo playtwo "
+                                     " . play-five play-six "
+                                     " . play-seven play-eight "
+                                     " . playthree playthree "
+                                     " . play-nine play-ten "
+                                     " . play-eleven play-twelve "
+                                     " . playfour playfour "
+                                     " . play-thirteen play-fourteen "
+                                     " . play-fifteen play-sixteen "
+                                     " . playfive playfive "
+                                     " . play-seventeen play-eighteen "
+                                     " . play-nineteen play-twenty "
+                                     "  footer footer footer"
+                                     
+                                     ; }    
+                                     
+                                     
+
+
+
+.nintendo-container{
+    grid-template-columns: 1fr repeat(2, minmax(40vw, auto)) 1fr;
+grid-template-areas: "navbar navbar navbar"
+                      "sub-menu sub-menu sub-menu"
+                      " . nintendo1 nintendo1"
+                      " . nin-one nin-two"
+                      " . nin-three nin-four"
+                      " . nintendo2 nintendo2"
+                      " . nin-five nin-six"
+                      " . nin-seven nin-eight"
+                      " . nintendo3 nintendo3"
+                      " . nin-nine nin-ten"
+                      " . nin-eleven nin-twelve"
+                      " . nintendo4 nintendo4"
+                      " . nin-thirteen nin-fourteen"
+                      " . nin-fifteen nin-sixteen"
+                      " . nintendo5 nintendo5"
+                      " . nin-seventeen nin-eighteen"
+                      " . nin-nineteen nin-twenty"
+                      " . nintendo6 nintendo6"
+                      " . nin-twentyone nin-twentytwo"
+                      " . nin-twentythree nin-twentyfour"
+                      " . nintendo7 nintendo7"
+                      " . nin-twentyfive nin-twentysix"
+                      " . nin-twentyseven nin-twentyeight"
+                      "footer footer footer";
+  
+
+}
 
     }
 
@@ -787,6 +995,6 @@ h2{
         height: 100%;
     }
 
-    }
+    
 
     
