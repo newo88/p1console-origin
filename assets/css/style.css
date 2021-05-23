@@ -44,11 +44,10 @@ h2{
 #navbar{
     grid-area: navbar;
     background-color: burlywood;
-}
-
-#navbar{
     text-align: center;
 }
+
+
 
 #p1photo, img{
     
