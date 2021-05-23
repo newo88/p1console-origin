@@ -1,322 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
     padding: 0;
     margin: 0;
 }
 
-/*landing-page
-
-
 body {
     display: grid;
     background-color: lightslategrey;
     box-sizing: border-box;
+    font-family: Roboto;
 }
 
-
-#navbar {
-    margin: 20px;
-    line-height: normal;
-    background-color: rgb(180, 44, 44);
+#logo{
+    margin-left: 20px;
+}
+iframe{
+    justify-content: strech;
 }
 
-
-#logo {
-    font-size: 30px;
-
+img{
+    justify-content: center;
+    height: auto;
+    width: auto;
 }
 
-#hero-image {
-    height: 400px;
-    width: 100%;
-    background-image: url('../images/hero-image-p1.jpg');
-    background-position: center;
-}
-
-
-
-#logo {
-    margin: 10px 0 0 20px;
-    float: left;
-    font-size: 150%;
-    color: khaki;
-
-}
-
-
-#links {
-    float: right;
-    letter-spacing: 3px;
-    font-size: 30px;
-    color: wheat;
-    margin: 20px 20px;
-    padding-bottom: 10px;
-}
-
-#links a:hover {
-    background-color: #fff;
-
-}
-
-
-#main {
-    text-align: center;
-    margin: 20px;
-
-}
-
-
-#start {
-    font-size: 50px;
-    text-align: center;
+h2{
+    text-transform:uppercase;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
 }
 
-#start-info {
-    font-size: 30px;
+#navbar, a{
+    color: black;
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#navbar{
+    grid-area: navbar;
+    background-color: burlywood;
+}
+
+#navbar{
     text-align: center;
-
-
-
 }
 
-#launch {
-    display: inline-flex;
-    padding: 30px 30px;
-    margin: auto;
+#p1photo, img{
+    
+    justify-content: center;
+    width: 100%;
+    border-radius: 3px;
+    background-size: inherit;
 }
 
-#system-logo {
-    display: inline-flex;
-    padding: 30px 30px;
-    margin: auto;
+iframe, #video1{
+    justify-content: center;
+    width: 100%;
+    border-radius: 3px;
+   }
+
+.commercials{
+    justify-content: center;
 }
 
+.play-container > div{
+    margin: 20px;
+    border: solid black 2px;
+}
 
-ul {
+.nintendo-container > div{
+    margin:20px;
+    border: solid black 2px;
+}
+
+.xbox-container > div{
+    margin: 20px;
+    border: solid black 2px;
+}
+
+.landing-container{
+    border: solid black 2px;
+    margin: 20px
+}
+
+li{
     text-decoration: none;
+}
+
+ul{
     list-style-type: none;
 }
 
-li {
-    display: inline;
-}
 
-a {
-    text-decoration: none;
-    color: rgba(214, 205, 202, 0.733);
-}
-*/
-/*===============Home screen videos=================
-.you-nintendo {
-    margin: 20px;
-    width: 300px;
-    height: 300px;
-}
-
-.you-play {
-    margin: 20px;
-    width: 300px;
-    height: 300px;
-}
-
-.you-micro {
-    margin: 20px;
-    width: 300px;
-    height: 300px;
-}
-*/
-/*============== Home screen Logos================
-.logo-one {
-    margin: 20px;
-    height: 200px;
-    width: 240px;
-    border: 3px solid black;
-}
-
-.logo-two {
-    margin: 20px;
-    height: 200px;
-    width: 240px;
-    border: 3px solid black;
-
-}
-
-.logo-three {
-    margin: 20px;
-    height: 200px;
-    width: 240px;
-    border: 3px solid black;
-
-}
-*/
-
-/*===========Paystation Nintendo Microsoft Pages
-
-.system-info {
-    display: flex;
-    text-align: center;
-}
-
-.companylogo {
-    text-align: center;
+/*----------------------------------------Landing Page Container*/
+.landing-container{
+display: grid;
+grid-template-columns: 3vw 1fr 3vw;
+background-color: darkslategray;
+font-size: 25px;
+background-color: rgb(45, 48, 236);
+text-align: center;  
+box-sizing: border-box;
+border: 2px solid black;
+margin: 20px;
+width: 100%;
+justify-content: strech;
+align-items: center;
+justify-content: center;
+    grid-template-areas: 
+    " . navbar"
+    " . heading"
+    " . start-info"
+    " . launch-one"
+    " . logo-one"
+    " . launch-two"
+    " . logo-two"
+    " . launch-three"
+    " . logo-three"
+    " . footer";
 }
 
 
-
-
-.play-image {
-    height: 250px;
-    width: 60%;
-    margin: 50px 50px;
-   justify-content: center;
-
-
-
+#heading{
+    grid-area: heading;
 }
 
-.imageplay {
-  width: 300px;
-  height: 200px;
-  text-align: center;
-background-color: lime;
-
-
+#hero-image{
+    grid-area: hero-bg;
 }
 
-.play-one-info {
-    width: 60%;
-    font-size: 25px;
-    border: white 1px solid;
-    margin: 20px 20px;
-    padding: 10px 10px;
-    justify-content: center;
-    box-shadow: 0 0 0 .23;
-    margin-right: 50px;
-
-
+#start-info{
+    grid-area: start-info;
 }
 
-table{
-    justify-content: center;
+#launch-one{
+    grid-area: launch-one;
 }
 
-
-.company-name {
-    font-size: 40px;
-    text-align: center;
+#launch-two{
+    grid-area: launch-two;
 }
 
-.system-name {
-    height: 75px;
-    width: 100%;
-    text-align: left;
-    font-size: 50px;
-    color: red;
-    margin: 20px 0 0 50px;
-
+#launch-three{
+    grid-area: launch-three;
 }
 
-.sub-menu {
-    width: 50%;
-    position: fixed;
-    top: 0;
-    left: 0;
+#logo-one{
+    grid-area: logo-one;
 }
 
-.sub-menu a {
-    color: black;
-    background-color: rgb(14, 68, 116);
+#logo-two{
+    grid-area: logo-two;
+}
+
+#logo-three{
+    grid-area: logo-three;
+}
+
+#footer{
+    grid-area: Footer;
 }
 
 
-*/
+/*------------------Nintendo container*/
 
-
-/*Media Querys
-@media screen and (max-width: 1000px) {
-    .system-info {
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    .play-image,
-    iframe {
-        width: 100%;
-        height: 200px;
-        text-align: center;
-        margin: 10px auto;
-
-    }
-
-    .play-image {
-        width: 100%;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    .play-one-info,
-    p {
-
-        text-align: center;
-        margin: 10px auto;
-
-    }
-
-    .system-name {
-        text-align: center;
-        margin: 0 auto;
-    }
-
-
-    .imageplay {
-        text-align: center;
-        margin: 10px auto;
-    }
-
-    .system-name {
-        text-align: center;
-        width: 80%;
-    }
-
-    .sub-menu {
-        display: none;
-    }
-
-    #launch {
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    #system-logo {
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    #hero-image {
-        display: none;
-    }
-
-    .imageplay:hover {
-        transform: scale(1);
-        z-index: 1;
-
-    }
-
-    #links {
-        text-decoration: underline;
-        float: left;
-        display: grid;
-        grid-row: 3;
-
-    }
-
-
-
-}
-*/
 .nintendo-container{
 grid-template-columns: 3vw 1fr 3vw;
 grid-gap: 2px;
@@ -335,6 +187,8 @@ width: 100%;
 }
 
 .nintendo-container {
+    display: grid;
+    grid-template-columns: 3vw 1fr 3vw;
     grid-template-areas:
     " . navbar"
     " . sub-menu"
@@ -375,6 +229,7 @@ width: 100%;
     " . nin-twentyeight"
     " . footer";
 }
+
 #footer{
 grid-area: footer;
 }
@@ -521,12 +376,12 @@ grid-area: nin-one;
     grid-area: nin-twentyeight;
 }
 
-/*Playstation grid layout*/
+/*----------------------------------Playstation grid layout*/
+
 
 .play-container {
     display: grid;
     grid-template-columns: 3vw 1fr 3vw;
-    grid-gap: 2px;
     color: black;
     background-color: darkslategray;
     font-size: 25px;
@@ -539,19 +394,17 @@ grid-area: nin-one;
    
 }
 
-#navbar{
-    background-color: aliceblue;
-}
+
+
+
  
 #play-one {
     grid-area: play-one;
-    border:rgb(14, 68, 116) 2px solid;
-    justify-content: center;
+   justify-content: center;
 }
 
 #play-two {
     grid-area: play-two;
-    border:rgb(14, 68, 116) 2px solid;
     font-size: 30px;
     justify-content: center;
 
@@ -559,36 +412,35 @@ grid-area: nin-one;
 
 #play-three {
     grid-area: play-three;
-    border:rgb(14, 68, 116) 2px solid;
+  
     justify-content: center;
 
 }
 
 #play-four{
     grid-area: play-four;
-    border:rgb(14, 68, 116) 2px solid;
+   
     justify-content: center;
 
     }
 
 #play-five {
-    border:rgb(14, 68, 116) 2px solid;
+    
     grid-area: play-five;
 }
 
 #play-six{
     grid-area: play-six;
-    border:rgb(14, 68, 116) 2px solid; 
 }
 
 #play-seven {
     grid-area: play-seven;
-    border:rgb(14, 68, 116) 2px solid;
+ 
 }
 
 #play-eight {
     grid-area: play-eight;
-    border:rgb(14, 68, 116) 2px solid;
+   
 }
 
 
@@ -665,13 +517,6 @@ grid-area: nin-one;
 }
 
 
-
-.video1{
-    background-size: inherit;
-   align-items: stretch;
-}
-
-
 .play-container {
     display: grid;
     justify-content: center;
@@ -710,44 +555,6 @@ grid-area: nin-one;
 
 ;
      
-}
-iframe{
-    justify-content: strech;
-    height: 100%;
-}
-
-img{
-    justify-content: center;
-    height: auto;
-    width: auto;
-}
-
-#navbar{
-    grid-area: navbar;
-}
-
-
-
-#p1photo, img{
-    
-    justify-content: center;
-    width: 100%;
-    border-radius: 3px;
-    background-size: inherit;
-}
-
-iframe, #video1{
-    justify-content: center;
-    width: 100%;
-    border-radius: 3px;
-   
-    
-}
-
-.play-container > div{
-    margin: 20px;
-    
-
 }
 
 /*grid area microsoft*/
@@ -901,7 +708,26 @@ h2{
 
 
 /* microsoft playstation media query*/
+
+
 @media (min-width: 1100px){
+    .landing-container{
+        grid-template-columns: 1fr repeat(2, minmax(40vw, auto)) 1fr;
+        grid-template-areas:" navbar navbar navbar"
+                            " heading heading heading"
+                            "  start-info start-info start-info"
+                            " . launch-one logo-one "
+                            " . launch-two logo-two"
+                            " . launch-three logo-three"
+                            " footer footer footer"
+
+    }
+    
+    
+    
+    
+    
+    
     .xbox-container{
         grid-template-columns: 1fr repeat(2, minmax(40vw, auto)) 1fr;
         grid-template-areas:
@@ -925,7 +751,7 @@ h2{
  .play-container{
  grid-template-columns: 1fr repeat(2, minmax(40vw, auto)) 1fr;
 grid-template-areas:"navbar navbar navbar "
-                                    " sub-menu sub-menu sub-meun"
+                                    "  . sub-menu sub-meun"
                                      " . playone playone "
                                      " . play-one play-two "
                                      " . play-three play-four "
@@ -979,13 +805,32 @@ grid-template-areas: "navbar navbar navbar"
 
 }
 
-    }
+}
 
     #navbar{
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 80px;
+    }
+
+    #logo{
+        font-size: 120%;
+    }
+
+    .landing-container{
+        margin: 20px;
+    }
+
+    #sub-menu{
+        text-align: center;
+    }
+
+    #links, a{
+        display: inline-flex;
+        letter-spacing: 2px;
+        text-decoration: none;
+    
     }
 
    
