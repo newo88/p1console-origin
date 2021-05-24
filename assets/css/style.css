@@ -6,372 +6,399 @@
 }
 
 body {
-    display: grid;
-    background-color: lightslategrey;
+
     box-sizing: border-box;
     font-family: Roboto;
 }
 
-#logo{
-    margin-left: 20px;
-}
-iframe{
-    justify-content: strech;
+#links a {
+    margin-right: 10px;
+    letter-spacing: 2px;
 }
 
-img{
+
+img {
     justify-content: center;
     height: auto;
     width: auto;
-}
-
-h2{
-    text-transform:uppercase;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
 
 }
 
-#navbar, a{
-    color: black;
+
+
+h2 {
+    text-transform: uppercase;
+    background-color: black;
+    color: #fff;
+    border-radius: 20px;
+}
+
+#links{
+    color:rgb(131, 104, 104);
+}
+
+#heading{
+    margin-top: 20px;
+}
+
+#navbar,
+a {
+    color: white;
     display: inline-block;
     display: flex;
     justify-content: space-between;
-    
+
 }
 
-#navbar{
+#navbar {
     grid-area: navbar;
-    background-color: burlywood;
+    background-color: black;
     text-align: center;
 }
 
 
 
-#p1photo, img{
-    
+#p1photo,
+img {
+
     justify-content: center;
     width: 100%;
     border-radius: 3px;
     background-size: inherit;
 }
 
-iframe, #video1{
+iframe,
+#video1 {
     justify-content: center;
     width: 100%;
     border-radius: 3px;
-   }
+}
 
-.commercials{
+.commercials {
     justify-content: center;
 }
 
-.play-container > div{
+.play-container>div {
     margin: 20px;
     border: solid black 2px;
+    border-radius: 5px;
+    background: rgb(197, 225, 241);
+    background: linear-gradient(0deg, rgba(197, 225, 241, 1) 72%, rgba(243, 248, 249, 1) 100%);
+    ;
 }
 
-.nintendo-container > div{
-    margin:20px;
-    border: solid black 2px;
-}
-
-.xbox-container > div{
+.nintendo-container>div {
     margin: 20px;
     border: solid black 2px;
+    border-radius: 5px;
+    background: rgb(197, 225, 241);
+    background: linear-gradient(0deg, rgba(197, 225, 241, 1) 72%, rgba(243, 248, 249, 1) 100%);
 }
 
-.landing-container{
+.xbox-container>div {
+    margin: 20px;
     border: solid black 2px;
-    margin: 20px
+    border-radius: 5px;
+    background: rgb(197, 225, 241);
+    background: linear-gradient(0deg, rgba(197, 225, 241, 1) 72%, rgba(243, 248, 249, 1) 100%);
 }
 
-li{
+
+
+.landing-container > div {
+    border: solid black 2px;
+    margin: 20px;
+    border-radius: 5px;
+    background: rgb(197, 225, 241);
+    background: linear-gradient(0deg, rgba(197, 225, 241, 1) 72%, rgba(243, 248, 249, 1) 100%);
+}
+
+li {
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style-type: none;
+}
+
+.logo1 {
+    width: 100%;
+    height: 100%;
 }
 
 
 /*----------------------------------------Landing Page Container*/
-.landing-container{
-display: grid;
-grid-template-columns: 3vw 1fr 3vw;
-background-color: darkslategray;
-font-size: 25px;
-background-color: rgb(45, 48, 236);
-text-align: center;  
-box-sizing: border-box;
-border: 2px solid black;
-margin: 20px;
-width: 100%;
-justify-content: strech;
-align-items: center;
-justify-content: center;
-    grid-template-areas: 
-    " . navbar"
-    " . heading"
-    " . start-info"
-    " . launch-one"
-    " . logo-one"
-    " . launch-two"
-    " . logo-two"
-    " . launch-three"
-    " . logo-three"
-    " . footer";
+.landing-container {
+    display: grid;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(7, 6, 94, 1) 24%, rgba(9, 9, 121, 1) 35%, rgba(7, 59, 154, 1) 51%, rgba(12, 154, 238, 1) 72%, rgba(0, 212, 255, 1) 100%);
+    grid-template-columns: 3vw 1fr 3vw;
+    font-size: 25px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid black;
+    grid-template-areas:
+        " . navbar"
+        " . heading"
+        " . start-info"
+        " . launch-one"
+        " . logo-one"
+        " . launch-two"
+        " . logo-two"
+        " . launch-three"
+        " . logo-three"
+        " . footer";
 }
 
 
-#heading{
+#heading {
     grid-area: heading;
 }
 
-#hero-image{
+#hero-image {
     grid-area: hero-bg;
 }
 
-#start-info{
+#start-info {
     grid-area: start-info;
 }
 
-#launch-one{
+#launch-one {
     grid-area: launch-one;
 }
 
-#launch-two{
+#launch-two {
     grid-area: launch-two;
 }
 
-#launch-three{
+#launch-three {
     grid-area: launch-three;
 }
 
-#logo-one{
+#logo-one {
     grid-area: logo-one;
 }
 
-#logo-two{
+#logo-two {
     grid-area: logo-two;
 }
 
-#logo-three{
+#logo-three {
     grid-area: logo-three;
 }
 
-#footer{
+#footer {
     grid-area: Footer;
 }
 
 
 /*------------------Nintendo container*/
 
-.nintendo-container{
-grid-template-columns: 3vw 1fr 3vw;
-grid-gap: 2px;
-color: black;
-background-color: darkslategray;
-font-size: 25px;
-border:rgb(14, 68, 116) 2px solid;
-text-align: center;  
-box-sizing: border-box;
-letter-spacing: 2px;
-justify-content: strech;
-align-items: stretch;
-display: grid;
-justify-content: center;
-width: 100%;
+.nintendo-container {
+    grid-template-columns: 3vw 1fr 3vw;
+    grid-gap: 2px;
+    color: black;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(7, 6, 94, 1) 24%, rgba(9, 9, 121, 1) 35%, rgba(7, 59, 154, 1) 51%, rgba(12, 154, 238, 1) 72%, rgba(0, 212, 255, 1) 100%);
+    font-size: 25px;
+    text-align: center;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+    
+    justify-content: center;
+    width: 100%;
 }
 
 .nintendo-container {
     display: grid;
     grid-template-columns: 3vw 1fr 3vw;
     grid-template-areas:
-    " . navbar"
-    " . sub-menu"
-    " . nintendo1"
-    " . nin-one"
-    " . nin-two"
-    " . nin-three"
-    " . nin-four"
-    " . nintendo2"
-    " . nin-five"
-    " . nin-six"
-    " . nin-seven"
-    " . nin-eight"
-    " . nintendo3"
-    " . nin-nine"
-    " . nin-ten"
-    " . nin-eleven"
-    " . nin-twelve"
-    " . nintendo4"
-    " . nin-thirteen"
-    " . nin-fourteen"
-    " . nin-fifteen"
-    " . nin-sixteen"
-    " . nintendo5"
-    " . nin-seventeen"
-    " . nin-eighteen"
-    " . nin-nineteen"
-    " . nin-twenty"
-    " . nintendo6"
-    " . nin-twentyone"
-    " . nin-twentytwo"
-    " . nin-twentythree"
-    " . nin-twentyfour"
-    " . nintendo7"
-    " . nin-twentyfive"
-    " . nin-twentysix"
-    " . nin-twentyseven"
-    " . nin-twentyeight"
-    " . footer";
+        " . navbar"
+        " . sub-menu"
+        " . nintendo1"
+        " . nin-one"
+        " . nin-two"
+        " . nin-three"
+        " . nin-four"
+        " . nintendo2"
+        " . nin-five"
+        " . nin-six"
+        " . nin-seven"
+        " . nin-eight"
+        " . nintendo3"
+        " . nin-nine"
+        " . nin-ten"
+        " . nin-eleven"
+        " . nin-twelve"
+        " . nintendo4"
+        " . nin-thirteen"
+        " . nin-fourteen"
+        " . nin-fifteen"
+        " . nin-sixteen"
+        " . nintendo5"
+        " . nin-seventeen"
+        " . nin-eighteen"
+        " . nin-nineteen"
+        " . nin-twenty"
+        " . nintendo6"
+        " . nin-twentyone"
+        " . nin-twentytwo"
+        " . nin-twentythree"
+        " . nin-twentyfour"
+        " . nintendo7"
+        " . nin-twentyfive"
+        " . nin-twentysix"
+        " . nin-twentyseven"
+        " . nin-twentyeight"
+        " . footer";
 }
 
-#footer{
-grid-area: footer;
+#footer {
+    grid-area: footer;
 }
 
-#nintendo1{
- grid-area: nintendo1;
-} 
-
-#nintendo1{
+#nintendo1 {
     grid-area: nintendo1;
-} 
+}
 
-#nintendo2{
+#nintendo1 {
+    grid-area: nintendo1;
+}
+
+#nintendo2 {
     grid-area: nintendo2;
-} 
+}
 
-#nintendo3{
+#nintendo3 {
     grid-area: nintendo3;
-} 
-#nintendo4{
+}
+
+#nintendo4 {
     grid-area: nintendo4;
-} 
-#nintendo5{
+}
+
+#nintendo5 {
     grid-area: nintendo5;
-} 
+}
 
-#nintendo6{
+#nintendo6 {
     grid-area: nintendo6;
-} 
+}
 
-#nintendo7{
+#nintendo7 {
     grid-area: nintendo7;
-} 
+}
 
-#nin-one{
-grid-area: nin-one;
-   }
+#nin-one {
+    grid-area: nin-one;
+}
 
-#nin-two{
+#nin-two {
     grid-area: nin-two;
 }
 
-#nin-three{
+#nin-three {
     grid-area: nin-three;
 }
 
-#nin-four{
+#nin-four {
     grid-area: nin-four;
 }
 
-#nin-five{
+#nin-five {
     grid-area: nin-five;
 }
 
-#nin-six{
+#nin-six {
     grid-area: nin-six;
 }
 
-#nin-seven{
+#nin-seven {
     grid-area: nin-seven;
 }
 
-#nin-eight{
+#nin-eight {
     grid-area: nin-eight;
 }
 
-#nin-nine{
+#nin-nine {
     grid-area: nin-nine;
 }
 
-#nin-ten{
+#nin-ten {
     grid-area: nin-ten;
 }
 
-#nin-eleven{
+#nin-eleven {
     grid-area: nin-eleven;
 }
 
-#nin-twelve{
+#nin-twelve {
     grid-area: nin-twelve;
 }
 
-#nin-thirteen{
+#nin-thirteen {
     grid-area: nin-thirteen;
 }
 
-#nin-fourteen{
+#nin-fourteen {
     grid-area: nin-fourteen;
 }
 
-#nin-fifteen{
+#nin-fifteen {
     grid-area: nin-fifteen;
 }
 
-#nin-sixteen{
+#nin-sixteen {
     grid-area: nin-sixteen;
 }
 
-#nin-seventeen{
+#nin-seventeen {
     grid-area: nin-seventeen;
 }
 
-#nin-eighteen{
+#nin-eighteen {
     grid-area: nin-eighteen;
 }
 
-#nin-nineteen{
+#nin-nineteen {
     grid-area: nin-nineteen;
 }
 
-#nin-twenty{
+#nin-twenty {
     grid-area: nin-twenty;
 }
 
-#nin-twentyone{
+#nin-twentyone {
     grid-area: nin-twentyone;
 }
 
-#nin-twentytwo{
+#nin-twentytwo {
     grid-area: nin-twentytwo;
 }
 
-#nin-twentythree{
+#nin-twentythree {
     grid-area: nin-twentythree;
 }
 
-#nin-twentyfour{
+#nin-twentyfour {
     grid-area: nin-twentyfour;
 }
 
-#nin-twentyfive{
+#nin-twentyfive {
     grid-area: nin-twentyfive;
 }
 
-#nin-twentysix{
+#nin-twentysix {
     grid-area: nin-twentysix;
 
 }
-#nin-twentyseven{
+
+#nin-twentyseven {
     grid-area: nin-twentyseven;
 }
 
-#nin-twentyeight{
+#nin-twentyeight {
     grid-area: nin-twentyeight;
 }
 
@@ -379,139 +406,132 @@ grid-area: nin-one;
 
 
 .play-container {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(7, 6, 94, 1) 24%, rgba(9, 9, 121, 1) 35%, rgba(7, 59, 154, 1) 51%, rgba(12, 154, 238, 1) 72%, rgba(0, 212, 255, 1) 100%);
     display: grid;
     grid-template-columns: 3vw 1fr 3vw;
     color: black;
-    background-color: darkslategray;
     font-size: 25px;
-    border:rgb(14, 68, 116) 2px solid;
-    text-align: center;  
+    text-align: center;
     box-sizing: border-box;
     letter-spacing: 2px;
-    justify-content: strech;
     align-items: stretch;
-   
+
 }
 
 
 
 
- 
+
 #play-one {
     grid-area: play-one;
-   justify-content: center;
 }
 
 #play-two {
     grid-area: play-two;
-    font-size: 30px;
-    justify-content: center;
 
 }
 
 #play-three {
     grid-area: play-three;
-  
-    justify-content: center;
 
 }
 
-#play-four{
+#play-four {
     grid-area: play-four;
-   
-    justify-content: center;
 
-    }
+
+}
 
 #play-five {
-    
+
     grid-area: play-five;
 }
 
-#play-six{
+#play-six {
     grid-area: play-six;
 }
 
 #play-seven {
     grid-area: play-seven;
- 
+
 }
 
 #play-eight {
     grid-area: play-eight;
-   
+
 }
 
 
-#play-nine{
+#play-nine {
     grid-area: play-nine;
 }
 
-#play-ten{
+#play-ten {
     grid-area: play-ten;
 }
 
-#play-eleven{
+#play-eleven {
     grid-area: play-eleven;
 }
 
-#play-twelve{
+#play-twelve {
     grid-area: play-twelve;
 }
 
-#play-thirteen{
+#play-thirteen {
     grid-area: play-thirteen;
 }
 
-#play-fourteen{
+#play-fourteen {
     grid-area: play-fourteen;
 }
 
-#play-fifteen{
+#play-fifteen {
     grid-area: play-fifteen;
 }
 
-#play-sixteen{
+#play-sixteen {
     grid-area: play-sixteen;
 }
 
-#play-seventeen{
+#play-seventeen {
     grid-area: play-seventeen;
 }
 
-#play-eighteen{
+#play-eighteen {
     grid-area: play-eighteen;
 }
 
-#play-nineteen{
+#play-nineteen {
     grid-area: play-nineteen;
 }
 
-#play-twenty{
+#play-twenty {
     grid-area: play-twenty;
 }
 
-#playone{
+#playone {
     grid-area: playone;
 }
 
-#playtwo{
+#playtwo {
     grid-area: playtwo;
 }
 
-#playthree{
+#playthree {
     grid-area: playthree;
 }
 
-#playfour{
+#playfour {
     grid-area: playfour;
 }
 
-#playfive{
+#playfive {
     grid-area: playfive;
 }
 
-#footer{
+#footer {
     grid-area: footer;
 }
 
@@ -552,155 +572,151 @@ grid-area: nin-one;
 
 
 
-;
-     
+    ;
+
 }
 
 /*grid area microsoft*/
-.xbox-container{
+.xbox-container {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(7, 6, 94, 1) 24%, rgba(9, 9, 121, 1) 35%, rgba(7, 59, 154, 1) 51%, rgba(12, 154, 238, 1) 72%, rgba(0, 212, 255, 1) 100%);
     display: grid;
     grid-template-columns: 3vw 1fr 3vw;
-    grid-gap: 2px;
-    color: black;
-    background-color: darkslategray;
     font-size: 25px;
-    border:rgb(14, 68, 116) 2px solid;
-    text-align: center;  
-    box-sizing: border-box;
+    border: rgb(14, 68, 116) 2px solid;
+    text-align: center;
     letter-spacing: 2px;
-    justify-content: strech;
     align-items: stretch;
-   grid-template-areas: 
-    " . navbar"
-    " . sub-menu"
-    " . xboxone"
-    " . xone" 
-    " . xtwo"
-    " . xthree"
-    " . xfour"
-    " . xboxtwo"
-    " . xfive"
-    " . xsix"
-    " . xseven"
-    " . xeight"
-    " . xboxthree"
-    " . xnine"
-    " . xten"
-    " . xeleven"
-    " . xtwelve"
-    " . xboxfour"
-    " . xthirteen"
-    " . xfourteen"
-    " . xfifteen"
-    " . xsixteen"
-    " . footer"
+    grid-template-areas:
+        " . navbar"
+        " . sub-menu"
+        " . xboxone"
+        " . xone"
+        " . xtwo"
+        " . xthree"
+        " . xfour"
+        " . xboxtwo"
+        " . xfive"
+        " . xsix"
+        " . xseven"
+        " . xeight"
+        " . xboxthree"
+        " . xnine"
+        " . xten"
+        " . xeleven"
+        " . xtwelve"
+        " . xboxfour"
+        " . xthirteen"
+        " . xfourteen"
+        " . xfifteen"
+        " . xsixteen"
+        " . footer"
     ;
 }
 
-h2{
-      height: 80px;
-      background-color: aliceblue;
-}
 
-#navbar{
+#navbar {
     grid-area: navbar;
 }
 
-#footer{
+#footer {
     grid-area: footer;
 }
 
-.sub-menu{
+.sub-menu {
     grid-area: sub-menu;
 }
 
-#xone{
+#xone {
     grid-area: xone;
 }
 
-#xtwo{
+#xtwo {
     grid-area: xtwo;
 }
 
 
-#xthree{
+#xthree {
     grid-area: xthree;
 }
 
 
-#xfour{
+#xfour {
     grid-area: xfour;
 }
 
 
-#xfive{
+#xfive {
     grid-area: xfive;
 }
 
 
-#xsix{
+#xsix {
     grid-area: xsix;
 }
 
-#xseven{
+#xseven {
     grid-area: xseven;
 }
 
 
-#xeight{
+#xeight {
     grid-area: xeight;
 }
 
 
-#xnine{
+#xnine {
     grid-area: xnine;
 }
 
-#xten{
+#xten {
     grid-area: xten;
 }
 
 
-#xeleven{
+#xeleven {
     grid-area: xeleven;
 }
 
 
-#xtwelve{
+#xtwelve {
     grid-area: xtwelve;
 }
 
-#xthirteen{
+#xthirteen {
     grid-area: xthirteen;
 }
 
-#xfourteen{
+#xfourteen {
     grid-area: xfourteen;
 }
 
-#xfifteen{
+#xfifteen {
     grid-area: xfifteen;
 }
 
-#xsixteen{
+#xsixteen {
     grid-area: xsixteen;
 }
 
 
-#xboxone{
+#xboxone {
     grid-area: xboxone;
 }
-#xboxtwo{
+
+#xboxtwo {
     grid-area: xboxtwo;
 }
-#xboxthree{
+
+#xboxthree {
     grid-area: xboxthree;
 }
-#xboxfour{
+
+#xboxfour {
     grid-area: xboxfour;
 }
 
-#xboxfour{
+#xboxfour {
     grid-area: xboxfour;
 }
 
@@ -709,136 +725,132 @@ h2{
 /* microsoft playstation media query*/
 
 
-@media (min-width: 1100px){
-    .landing-container{
+@media (min-width: 1100px) {
+    .landing-container {
         grid-template-columns: 1fr repeat(2, minmax(40vw, auto)) 1fr;
-        grid-template-areas:" navbar navbar navbar"
-                            " heading heading heading"
-                            "  start-info start-info start-info"
-                            " . launch-one logo-one "
-                            " . launch-two logo-two"
-                            " . launch-three logo-three"
-                            " footer footer footer"
+        grid-template-areas: " nav navbar navbar"
+            "  . heading heading"
+            "  . start-info start-info"
+            " . launch-one logo-one "
+            " . launch-two logo-two"
+            " . launch-three logo-three"
+            " footer footer footer"
 
     }
-    
-    
-    
-    
-    
-    
-    .xbox-container{
+
+    .xbox-container {
         grid-template-columns: 1fr repeat(2, minmax(40vw, auto)) 1fr;
         grid-template-areas:
-             "navbar navbar navbar"
-             " sub-menu sub-menu sub-menu"
-             " . xboxone xboxone "
-             " . xone xtwo"
-             " . xthree xfour"
-             " . xboxtwo xboxtwo"
-             " . xfive xsix"
-             " . xseven xeight"
-             " . xboxthree xboxthree"
-             " . xnine xten"
-             " . xeleven xtwelve"
-             " . xboxfour xboxfour"
-             " . xthirteen xfourteen"
-             " . xfifteen xsixteen"
-             "footer footer footer";}
+            "navbar navbar navbar"
+            " sub-menu sub-menu sub-menu"
+            " . xboxone xboxone "
+            " . xone xtwo"
+            " . xthree xfour"
+            " . xboxtwo xboxtwo"
+            " . xfive xsix"
+            " . xseven xeight"
+            " . xboxthree xboxthree"
+            " . xnine xten"
+            " . xeleven xtwelve"
+            " . xboxfour xboxfour"
+            " . xthirteen xfourteen"
+            " . xfifteen xsixteen"
+            "footer footer footer";
+    }
 
 
- .play-container{
- grid-template-columns: 1fr repeat(2, minmax(40vw, auto)) 1fr;
-grid-template-areas:"navbar navbar navbar "
-                                    "  . sub-menu sub-meun"
-                                     " . playone playone "
-                                     " . play-one play-two "
-                                     " . play-three play-four "
-                                     " . playtwo playtwo "
-                                     " . play-five play-six "
-                                     " . play-seven play-eight "
-                                     " . playthree playthree "
-                                     " . play-nine play-ten "
-                                     " . play-eleven play-twelve "
-                                     " . playfour playfour "
-                                     " . play-thirteen play-fourteen "
-                                     " . play-fifteen play-sixteen "
-                                     " . playfive playfive "
-                                     " . play-seventeen play-eighteen "
-                                     " . play-nineteen play-twenty "
-                                     "  footer footer footer"
-                                     
-                                     ; }    
-                                     
-                                     
+    .play-container {
+        grid-template-columns: 1fr repeat(2, minmax(40vw, auto)) 1fr;
+        grid-template-areas: "navbar navbar navbar "
+            "  . sub-menu sub-meun"
+            " . playone playone "
+            " . play-one play-two "
+            " . play-three play-four "
+            " . playtwo playtwo "
+            " . play-five play-six "
+            " . play-seven play-eight "
+            " . playthree playthree "
+            " . play-nine play-ten "
+            " . play-eleven play-twelve "
+            " . playfour playfour "
+            " . play-thirteen play-fourteen "
+            " . play-fifteen play-sixteen "
+            " . playfive playfive "
+            " . play-seventeen play-eighteen "
+            " . play-nineteen play-twenty "
+            "  footer footer footer"
+
+        ;
+    }
 
 
 
-.nintendo-container{
-    grid-template-columns: 1fr repeat(2, minmax(40vw, auto)) 1fr;
-grid-template-areas: "navbar navbar navbar"
-                      "sub-menu sub-menu sub-menu"
-                      " . nintendo1 nintendo1"
-                      " . nin-one nin-two"
-                      " . nin-three nin-four"
-                      " . nintendo2 nintendo2"
-                      " . nin-five nin-six"
-                      " . nin-seven nin-eight"
-                      " . nintendo3 nintendo3"
-                      " . nin-nine nin-ten"
-                      " . nin-eleven nin-twelve"
-                      " . nintendo4 nintendo4"
-                      " . nin-thirteen nin-fourteen"
-                      " . nin-fifteen nin-sixteen"
-                      " . nintendo5 nintendo5"
-                      " . nin-seventeen nin-eighteen"
-                      " . nin-nineteen nin-twenty"
-                      " . nintendo6 nintendo6"
-                      " . nin-twentyone nin-twentytwo"
-                      " . nin-twentythree nin-twentyfour"
-                      " . nintendo7 nintendo7"
-                      " . nin-twentyfive nin-twentysix"
-                      " . nin-twentyseven nin-twentyeight"
-                      "footer footer footer";
-  
+
+
+    .nintendo-container {
+        grid-template-columns: 1fr repeat(2, minmax(40vw, auto)) 1fr;
+        grid-template-areas: "navbar navbar navbar"
+            "sub-menu sub-menu sub-menu"
+            " . nintendo1 nintendo1"
+            " . nin-one nin-two"
+            " . nin-three nin-four"
+            " . nintendo2 nintendo2"
+            " . nin-five nin-six"
+            " . nin-seven nin-eight"
+            " . nintendo3 nintendo3"
+            " . nin-nine nin-ten"
+            " . nin-eleven nin-twelve"
+            " . nintendo4 nintendo4"
+            " . nin-thirteen nin-fourteen"
+            " . nin-fifteen nin-sixteen"
+            " . nintendo5 nintendo5"
+            " . nin-seventeen nin-eighteen"
+            " . nin-nineteen nin-twenty"
+            " . nintendo6 nintendo6"
+            " . nin-twentyone nin-twentytwo"
+            " . nin-twentythree nin-twentyfour"
+            " . nintendo7 nintendo7"
+            " . nin-twentyfive nin-twentysix"
+            " . nin-twentyseven nin-twentyeight"
+            "footer footer footer";
+
+
+    }
 
 }
 
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
 }
 
-    #navbar{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 80px;
-    }
 
-    #logo{
-        font-size: 120%;
-    }
 
-    .landing-container{
-        margin: 20px;
-    }
+.landing-container>div {
+    margin: 20px;
+    border: 2px solid black;
+}
 
-    #sub-menu{
-        text-align: center;
-    }
+#sub-menu {
+    text-align: center;
+}
 
-    #links, a{
-        display: inline-flex;
-        letter-spacing: 2px;
-        text-decoration: none;
-    
-    }
+#links,
+a {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    letter-spacing: 2px;
+    text-decoration: none;
 
-   
+}
 
-    img{
-        justify-content: strech;
-        height: 100%;
-    }
+img {
+    height: 100%;
+}
 
-    
-
-    
+iframe {
+    height: 100%;
+}
