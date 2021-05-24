@@ -5,6 +5,14 @@
     margin: 0;
 }
 
+#logo{
+    margin-left: 20px;
+}
+
+header{
+    border-radius: 10px;
+}
+
 body {
 
     box-sizing: border-box;
@@ -41,6 +49,10 @@ h2 {
     margin-top: 20px;
 }
 
+footer{
+    border-top: 2px solid black;
+}
+
 #navbar,
 a {
     color: white;
@@ -50,7 +62,16 @@ a {
 
 }
 
+a:active{
+    color: blue;
+}
+
+a:hover{
+    font-size: 120%;
+}
+
 #navbar {
+    margin-top: 10px;
     grid-area: navbar;
     background-color: black;
     text-align: center;
@@ -58,7 +79,7 @@ a {
 
 
 
-#p1photo,
+
 img {
 
     justify-content: center;
@@ -78,40 +99,18 @@ iframe,
     justify-content: center;
 }
 
+.landing-container > div,
+.xbox-container>div,
+.nintendo-container>div,
 .play-container>div {
     margin: 20px;
     border: solid black 2px;
     border-radius: 5px;
     background: rgb(197, 225, 241);
     background: linear-gradient(0deg, rgba(197, 225, 241, 1) 72%, rgba(243, 248, 249, 1) 100%);
-    ;
+    
 }
 
-.nintendo-container>div {
-    margin: 20px;
-    border: solid black 2px;
-    border-radius: 5px;
-    background: rgb(197, 225, 241);
-    background: linear-gradient(0deg, rgba(197, 225, 241, 1) 72%, rgba(243, 248, 249, 1) 100%);
-}
-
-.xbox-container>div {
-    margin: 20px;
-    border: solid black 2px;
-    border-radius: 5px;
-    background: rgb(197, 225, 241);
-    background: linear-gradient(0deg, rgba(197, 225, 241, 1) 72%, rgba(243, 248, 249, 1) 100%);
-}
-
-
-
-.landing-container > div {
-    border: solid black 2px;
-    margin: 20px;
-    border-radius: 5px;
-    background: rgb(197, 225, 241);
-    background: linear-gradient(0deg, rgba(197, 225, 241, 1) 72%, rgba(243, 248, 249, 1) 100%);
-}
 
 li {
     text-decoration: none;
@@ -583,7 +582,6 @@ ul {
     display: grid;
     grid-template-columns: 3vw 1fr 3vw;
     font-size: 25px;
-    border: rgb(14, 68, 116) 2px solid;
     text-align: center;
     letter-spacing: 2px;
     align-items: stretch;
@@ -725,7 +723,7 @@ ul {
 /* microsoft playstation media query*/
 
 
-@media (min-width: 1100px) {
+@media (min-width: 950px) {
     .landing-container {
         grid-template-columns: 1fr repeat(2, minmax(40vw, auto)) 1fr;
         grid-template-areas: " nav navbar navbar"

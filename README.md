@@ -28,7 +28,7 @@ This is the main marketing website for Code Institute. It is designed to be resp
 
 *   ### Wireframes
 
-    -   Home Page Wireframe -
+    -   Home Page Wireframe - 
 
     -   Mobile Wireframe - 
 
@@ -128,10 +128,10 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 
 ### Media
 
--   All Images were created by the developer.
+-  
 
 ### Acknowledgements
 
 -   My Mentor for continuous helpful feedback.
 
--   Tutor support at Code Institute for their support.
+-  
