@@ -5,18 +5,21 @@
     margin: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 #logo{
     margin-left: 20px;
 }
 
 header{
-    border-radius: 10px;
+    border-radius: 10px;   
 }
 
 body {
-
-    box-sizing: border-box;
-    font-family: Roboto;
+ box-sizing: border-box;
+    font-family: Roboto, sans-serif;
 }
 
 #links a {
@@ -24,14 +27,11 @@ body {
     letter-spacing: 2px;
 }
 
-
 img {
     justify-content: center;
     height: auto;
     width: auto;
-
 }
-
 
 
 h2 {
@@ -39,10 +39,7 @@ h2 {
     background-color: black;
     color: #fff;
     border-radius: 20px;
-}
-
-#links{
-    color:rgb(131, 104, 104);
+    font-size: 60px;
 }
 
 #heading{
@@ -53,22 +50,13 @@ footer{
     border-top: 2px solid black;
 }
 
-#navbar,
+#navbar, #footer,
 a {
     color: white;
-    display: inline-block;
-    display: flex;
-    justify-content: space-between;
-
+    display: block;
+    justify-content: center;
 }
 
-a:active{
-    color: blue;
-}
-
-a:hover{
-    font-size: 120%;
-}
 
 #navbar {
     margin-top: 10px;
@@ -77,26 +65,22 @@ a:hover{
     text-align: center;
 }
 
-
-
-
 img {
-
     justify-content: center;
     width: 100%;
     border-radius: 3px;
     background-size: inherit;
+    height: 100%;
 }
 
-iframe,
-#video1 {
+iframe{
     justify-content: center;
     width: 100%;
     border-radius: 3px;
 }
 
-.commercials {
-    justify-content: center;
+.stats{
+    text-align: left;
 }
 
 .landing-container > div,
@@ -108,9 +92,8 @@ iframe,
     border-radius: 5px;
     background: rgb(197, 225, 241);
     background: linear-gradient(0deg, rgba(197, 225, 241, 1) 72%, rgba(243, 248, 249, 1) 100%);
-    
+    padding: 5px;
 }
-
 
 li {
     text-decoration: none;
@@ -120,9 +103,11 @@ ul {
     list-style-type: none;
 }
 
-.logo1 {
-    width: 100%;
-    height: 100%;
+.sub-menu a{
+    font-size: 40px;
+    color:blue;
+    margin-right: 20px;
+  
 }
 
 
@@ -132,7 +117,7 @@ ul {
     background: rgb(2, 0, 36);
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(7, 6, 94, 1) 24%, rgba(9, 9, 121, 1) 35%, rgba(7, 59, 154, 1) 51%, rgba(12, 154, 238, 1) 72%, rgba(0, 212, 255, 1) 100%);
     grid-template-columns: 3vw 1fr 3vw;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     box-sizing: border-box;
     border: 2px solid black;
@@ -187,29 +172,22 @@ ul {
 }
 
 #footer {
-    grid-area: Footer;
+    grid-area: footer;
 }
 
 
 /*------------------Nintendo container*/
 
+
 .nintendo-container {
-    grid-template-columns: 3vw 1fr 3vw;
+    display: grid;
     grid-gap: 2px;
     color: black;
     background: rgb(2, 0, 36);
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(7, 6, 94, 1) 24%, rgba(9, 9, 121, 1) 35%, rgba(7, 59, 154, 1) 51%, rgba(12, 154, 238, 1) 72%, rgba(0, 212, 255, 1) 100%);
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
-    box-sizing: border-box;
-    letter-spacing: 2px;
-    
     justify-content: center;
-    width: 100%;
-}
-
-.nintendo-container {
-    display: grid;
     grid-template-columns: 3vw 1fr 3vw;
     grid-template-areas:
         " . navbar"
@@ -403,24 +381,47 @@ ul {
 
 /*----------------------------------Playstation grid layout*/
 
-
 .play-container {
+    display: grid;
+    grid-gap: 2px;
+    color: black;
     background: rgb(2, 0, 36);
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(7, 6, 94, 1) 24%, rgba(9, 9, 121, 1) 35%, rgba(7, 59, 154, 1) 51%, rgba(12, 154, 238, 1) 72%, rgba(0, 212, 255, 1) 100%);
-    display: grid;
-    grid-template-columns: 3vw 1fr 3vw;
-    color: black;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
-    box-sizing: border-box;
-    letter-spacing: 2px;
-    align-items: stretch;
+    justify-content: center;
+    grid-template-columns: 3vw 1fr 3vw;
+    grid-template-areas:
+        " . navbar "
+        " . sub-menu"
+        " . playone"
+        " . play-one "
+        " . play-two "
+        " . play-three "
+        " . play-four "
+        " . playtwo "
+        " . play-five "
+        " . play-six "
+        " . play-seven "
+        " . play-eight"
+        " . playthree "
+        " . play-nine "
+        " . play-ten "
+        " . play-eleven "
+        " . play-twelve "
+        " . playfour "
+        " . play-thirteen "
+        " . play-fourteen "
+        " . play-fifteen "
+        " . play-sixteen "
+        " . playfive "
+        " . play-seventeen "
+        " . play-eighteen "
+        " . play-nineteen "
+        " . play-twenty "
+        " . footer ";
 
 }
-
-
-
-
 
 #play-one {
     grid-area: play-one;
@@ -438,7 +439,6 @@ ul {
 
 #play-four {
     grid-area: play-four;
-
 
 }
 
@@ -535,45 +535,6 @@ ul {
 }
 
 
-.play-container {
-    display: grid;
-    justify-content: center;
-    width: 100%;
-    grid-template-areas:
-        " . navbar "
-        " . sub-menu"
-        " . playone"
-        " . play-one "
-        " . play-two "
-        " . play-three "
-        " . play-four "
-        " . playtwo "
-        " . play-five "
-        " . play-six "
-        " . play-seven "
-        " . play-eight"
-        " . playthree "
-        " . play-nine "
-        " . play-ten "
-        " . play-eleven "
-        " . play-twelve "
-        " . playfour "
-        " . play-thirteen "
-        " . play-fourteen "
-        " . play-fifteen "
-        " . play-sixteen "
-        " . playfive "
-        " . play-seventeen "
-        " . play-eighteen "
-        " . play-nineteen "
-        " . play-twenty "
-        " . footer "
-
-
-
-    ;
-
-}
 
 /*grid area microsoft*/
 .xbox-container {
@@ -581,10 +542,8 @@ ul {
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(7, 6, 94, 1) 24%, rgba(9, 9, 121, 1) 35%, rgba(7, 59, 154, 1) 51%, rgba(12, 154, 238, 1) 72%, rgba(0, 212, 255, 1) 100%);
     display: grid;
     grid-template-columns: 3vw 1fr 3vw;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
-    letter-spacing: 2px;
-    align-items: stretch;
     grid-template-areas:
         " . navbar"
         " . sub-menu"
@@ -759,8 +718,8 @@ ul {
 
     .play-container {
         grid-template-columns: 1fr repeat(2, minmax(40vw, auto)) 1fr;
-        grid-template-areas: "navbar navbar navbar "
-            "  . sub-menu sub-meun"
+        grid-template-areas: " navbar navbar navbar "
+            " . sub-menu sub-menu"
             " . playone playone "
             " . play-one play-two "
             " . play-three play-four "
@@ -776,14 +735,8 @@ ul {
             " . playfive playfive "
             " . play-seventeen play-eighteen "
             " . play-nineteen play-twenty "
-            "  footer footer footer"
-
-        ;
+            "  footer footer footer";
     }
-
-
-
-
 
     .nintendo-container {
         grid-template-columns: 1fr repeat(2, minmax(40vw, auto)) 1fr;
@@ -811,39 +764,17 @@ ul {
             " . nin-twentyfive nin-twentysix"
             " . nin-twentyseven nin-twentyeight"
             "footer footer footer";
-
-
-    }
-
 }
-
-#navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-}
-
-
-
-.landing-container>div {
-    margin: 20px;
-    border: 2px solid black;
-}
+   
 
 #sub-menu {
     text-align: center;
+} 
+
+iframe {
+    height: 100%;
 }
 
-#links,
-a {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    letter-spacing: 2px;
-    text-decoration: none;
-
-}
 
 img {
     height: 100%;
@@ -851,4 +782,13 @@ img {
 
 iframe {
     height: 100%;
+}
+
+#navbar, #footer,
+a {
+    color: white;
+    display: block;
+    justify-content: center;
+}
+
 }
