@@ -784,11 +784,37 @@ iframe {
     height: 100%;
 }
 
+#navbar{
+    height:100px;
+}
+
 #navbar, #footer,
 a {
     color: white;
-    display: block;
     justify-content: center;
 }
+
+#nav-bar, #logo{
+    display: flex;
+    float: left;
+    margin-top: 20px;
+}
+
+#nav-bar, #links{
+    display: flex;
+    float: right;
+    margin: 40px 20px;
+}
+
+.sub-menu{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+a:hover{
+    text-decoration: underline solid white 5px;
+}
+
 
 }
