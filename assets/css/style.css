@@ -813,7 +813,7 @@ a {
 }
 
 a:hover{
-    text-decoration: underline solid white 5px;
+    text-decoration: underline;
 }
 
 
