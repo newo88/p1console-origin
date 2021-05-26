@@ -4,7 +4,9 @@
 
 View the live project here. [Console-Origin](https://newo88.github.io/p1console-origin/index.html)
 
-This is the main marketing website for Code Institute. It is designed to be responsibe and accessible on a range of devices, making it easy to navigate for potential students and partners.
+The purpose of this site is to give the visitor an insite to all the different generations of there favourite console. 
+The site is based around the three main contenders in the market today Nintendo, Playstation and Microsoft. They are greeted on the home page with the qustion "Where did they Start?" With the main commercials from the launch of each of the company's first console. Under the commercial they can then click on the logo for the console they want to find out more about. When they go to the page they are looking for, the console are layed out from first released to last. Each section has four parts the start up music from that console, some info about the console, a photo of the console and then some easy read stats. 
+
 
 
 
@@ -20,22 +22,23 @@ This is the main marketing website for Code Institute. It is designed to be resp
 
 -   ### Design
     -   #### Colour Scheme
-        -   The two main colours used are Code Insititue blue and white and black for my headings.
+        -   The three main colours i used are blue black and white. I keep the colour scheme simple as not to take away from the photos of the consoles. Most of the photos have a white background and the console's them selves are mainly black and white in colour. The background colour has a gradient of light blue to dark blue so when the user is scrolling down through the page its not just the same block colour. 
 
     -   #### Typography
         -   The Roboto font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Roboto is a clean font used frequently in programming, so it is both attractive and appropriate.
     
    ### Wireframes
 
-     - The wireframes for the project can be found here [Wireframe](https://github.com/newo88/p1console-origin/tree/master/wireframes)
+- The wireframes for the project can be found here [Wireframe](https://github.com/newo88/p1console-origin/tree/master/wireframes)
 
 
-    #### Changes to Wireframe
 
-    - In my wire frames I had my logos and videos laid out in two rows of three. I have this changed this to three rows of two
+### Changes to Wireframe
+
+- In my wire frames I had my logos and videos laid out in two rows of three. I have this changed this to three rows of two
        to keep the site more uniform.
 
-    - I also had my navigation bar to the right in mobile view but centered this to give it a more uniform look.   
+- I also had my navigation bar to the right in mobile view but centered this to give it a more uniform look.   
 
 
 
@@ -65,9 +68,11 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   #### First Time Visitor Goals
 
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice.
-        2. The user has two options from the home page use the navigation bar at the top of the page or click the logo for the console they want to find out more about. 
-        3. When they get to the console page they are looking for they can scroll down and through them or there is a sub menu bar to take them straight to there console of choice.
+-   Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice.
+
+-   The user has two options from the home page use the navigation bar at the top of the page or click the logo for the console they want to find out more about.
+
+-   When they get to the console page they are looking for they can scroll down and through them or there is a sub menu bar to take them straight to there console of choice.
 
 
 ### Testing
@@ -83,10 +88,13 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ## Development
 
--   1. Further development of this site would include adding more companys and there consoles.
--   2. Adding a gaming hand held section.
--   3. Include a section for fixs for common know issues.
--   4. Include tear down videos for cleaning and restoring vintage consoles and hand helds.   
+-   Further development of this site would include adding more companys and there consoles.
+
+-   Adding a gaming hand held section.
+
+-   Include a section for fixs for common know issues.
+
+-   Include tear down videos for cleaning and restoring vintage consoles and hand helds.   
 
 ### GitHub Pages
 
