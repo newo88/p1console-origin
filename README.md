@@ -121,7 +121,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Media
 
--  Photos were sourced from wedsite's with free lisence file can be found here ()
+-  Photos were sourced from wedsite's with free lisence file can be found here [IMAGES](https://github.com/newo88/p1console-origin/blob/master/docs/photos_p1.txt.odt)
 
 ### Acknowledgements
 
