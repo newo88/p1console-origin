@@ -96,9 +96,17 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   Include tear down videos for cleaning and restoring vintage consoles and hand helds.   
 
-### GitHub Pages
+### Deployment
 
-The project was deployed to GitHub Pages.
+-    The website was deployed to Github pages.
+
+      1. From the Github repository go to 'Settings'.
+
+      2. From there navigate to the section 'Pages'.
+
+      3. From the dropdown menu in the section labeled 'Source' choose the option 'Master Branch' and click 'Save'.
+
+      4. Once saved a notification informing you the site has been published will appear with a link to the website.
 
 
 ### Code
